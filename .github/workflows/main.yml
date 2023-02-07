@@ -7,13 +7,13 @@ on:
     pull_request:
       branches: [ master]
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-    inputs:
-      region:
+    workflow_dispatch:
+      inputs:
+       region:
         description: "AWS Region"
         required: true
         default: "ap-southeast-2"
-      bucketName:
+       bucketName:
         description: "S3 Bucket Name"
         required: true
 
